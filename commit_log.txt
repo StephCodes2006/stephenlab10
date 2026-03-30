@@ -1,0 +1,11 @@
+Update 0: Initial setup of AkannioluActivity1011
+Update 1: Fixed fragment inflation issues
+Update 2: Added weather API integration
+Update 3: Updated fragment_akanniolu.xml layout
+Update 4: Fixed navigation drawer click listener
+Update 5: Implemented SharedPreferences for temperature units
+Update 6: Cleaned up duplicate fragment files
+Update 7: Optimized network calls in Akanniolu1Fragment
+Update 8: Added input validation for city spinner
+Update 9: Finalizing Lab 10 UI components
+Progress Log 0

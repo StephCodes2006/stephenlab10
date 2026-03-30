@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.stephenakanniolu.lab1011.StephenModule101-mergeDebugResources-34:/values-v29/values-v29.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\akann\\.gradle\\caches\\9.1.0\\transforms\\d7399464ce2b27bdb04d8d488c292ba5\\workspace\\transformed\\core-splashscreen-1.0.1\\res\\values-v29\\values-v29.xml",
+                    "from": {
+                        "startLines": "2,7",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,374",
+                        "endLines": "6,8",
+                        "endColumns": "12,12",
+                        "endOffsets": "369,464"
+                    }
+                }
+            ]
+        }
+    ]
+}

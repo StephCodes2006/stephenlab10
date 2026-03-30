@@ -1,0 +1,44 @@
+<!--Stephen Akanniolu n01725208-->
+<resources>
+    <string name="app_name">StephenAkannioluLab1011</string>
+    <string name="title_stephen">Stephen</string>
+    <string name="title_akanniolu">Akanniolu</string>
+    <string name="title_studentid">n01725208</string>
+    <string name="title_initial">SA</string>
+    <string name="title_asna">SALA</string>
+
+    <string name="student_id">n01725208</string>
+    <string name="celsius">Celsius</string>
+    <string name="fahrenheit">Fahrenheit</string>
+    <string name="select_city">Sélectionner une ville</string>
+    <string name="dismiss">Rejeter</string>
+
+    <string name="label_lon">Lon: </string>
+    <string name="label_lat">Lat: </string>
+    <string name="label_country">Pays: </string>
+    <string name="label_humidity">Humidité: </string>
+
+    <string name="unit_celsius">°C</string>
+    <string name="unit_fahrenheit">°F</string>
+    <string name="humidity_format">%1$d%%</string>
+    <string name="temp_format">%1$.1f%2$s</string>
+
+    <string name="error_prefix">Erreur: %1$s</string>
+    <string name="exception_prefix">Exception: %1$s</string>
+    <string name="json_error_prefix">Erreur d\'analyse JSON: %1$s</string>
+
+    <string-array name="cities_array">
+        <item>Toronto</item>
+        <item>Londres</item>
+        <item>Paris</item>
+        <item>Tokyo</item>
+        <item>Sydney</item>
+        <item>Astana</item>
+    </string-array>
+
+    <string-array name="video_descriptions">
+        <item>Introduction au développement Android</item>
+        <item>Bases de Jetpack Compose</item>
+        <item>Architecture Android avancée</item>
+    </string-array>
+</resources>

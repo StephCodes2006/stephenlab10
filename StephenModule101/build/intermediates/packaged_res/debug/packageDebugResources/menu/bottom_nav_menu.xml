@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_stephen"
+        android:icon="@drawable/ic_home"
+        android:title="Stephen" />
+    <item
+        android:id="@+id/navigation_akanniolu"
+        android:icon="@drawable/ic_dashboard"
+        android:title="Akanniolu" />
+    <item
+        android:id="@+id/navigation_id"
+        android:icon="@drawable/ic_star"
+        android:title="n01725208" />
+    <item
+        android:id="@+id/navigation_initial"
+        android:icon="@drawable/ic_person"
+        android:title="SA" />
+    <item
+        android:id="@+id/navigation_asna"
+        android:icon="@drawable/ic_person"
+        android:title="Asna" />
+</menu>
