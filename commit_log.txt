@@ -9,3 +9,4 @@ Update 7: Optimized network calls in Akanniolu1Fragment
 Update 8: Added input validation for city spinner
 Update 9: Finalizing Lab 10 UI components
 Progress Log 0
+Progress Log 1
