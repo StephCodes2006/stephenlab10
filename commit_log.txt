@@ -20,3 +20,4 @@ Detail Update 1: Added error handling for API timeouts
 Detail Update 2: Updated color resources in colors.xml
 Detail Update 3: Optimized fragment lifecycle methods
 Detail Update 4: Added input filtering for city names
+Detail Update 5: Updated SharedPreferences logic for unit persistence
