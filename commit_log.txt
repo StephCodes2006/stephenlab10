@@ -11,3 +11,4 @@ Update 9: Finalizing Lab 10 UI components
 Progress Log 0
 Progress Log 1
 Progress Log 2
+Progress Log 3
