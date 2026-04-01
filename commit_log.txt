@@ -23,3 +23,4 @@ Detail Update 4: Added input filtering for city names
 Detail Update 5: Updated SharedPreferences logic for unit persistence
 Detail Update 6: Fixed BottomNavigationView icon tinting
 Detail Update 7: Cleaned up unused layout imports
+Detail Update 8: Final code review and formatting
