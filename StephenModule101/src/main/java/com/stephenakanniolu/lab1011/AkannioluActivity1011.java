@@ -1,9 +1,17 @@
 //Stephen Akanniolu n01725208
 package com.stephenakanniolu.lab1011;
 
+import android.content.ContentResolver;
+import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
+import android.provider.ContactsContract;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.splashscreen.SplashScreen;
@@ -46,11 +54,9 @@ public class AkannioluActivity1011 extends AppCompatActivity {
             Fragment selectedFragment = null;
             int itemId = item.getItemId();
 
-            // Match these IDs exactly with your res/menu/bottom_nav_menu.xml
             if (itemId == R.id.navigation_stephen) {
                 selectedFragment = new StephenAkannioluFragment();
             } else if (itemId == R.id.navigation_akanniolu) {
-                // FIXED: Using Akanniolu1Fragment to match your weather class name
                 selectedFragment = new Akanniolu1Fragment();
             } else if (itemId == R.id.navigation_id) {
                 selectedFragment = new N01725208Fragment();
@@ -64,12 +70,11 @@ public class AkannioluActivity1011 extends AppCompatActivity {
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.nav_host_fragment, selectedFragment)
                         .commit();
-                return true; // Click handled successfully
+                return true;
             }
             return false;
         });
 
-        // Set default selection to StephenAkannioluFragment (1st screen from left)
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.nav_host_fragment, new StephenAkannioluFragment())
@@ -77,4 +82,46 @@ public class AkannioluActivity1011 extends AppCompatActivity {
             navView.setSelectedItemId(R.id.navigation_stephen);
         }
     }
+
+    // --- NEW CONTACTS STUFF START ---
+
+    // Requirement 21: Menu item on ActionBar (Toolbar)
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.ste_main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        // Requirement 21: Launch device contacts when clicked
+        if (item.getItemId() == R.id.steMenuContacts) {
+            steLaunchContactsAndToastCount();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void steLaunchContactsAndToastCount() {
+        // Launch the device contacts activity
+        Intent intent = new Intent(Intent.ACTION_VIEW, ContactsContract.Contacts.CONTENT_URI);
+        startActivity(intent);
+
+        // Requirement 22: Count contacts programmatically
+        int contactCount = 0;
+        ContentResolver cr = getContentResolver();
+        Cursor cur = cr.query(ContactsContract.Contacts.CONTENT_URI, null, null, null, null);
+
+        if (cur != null) {
+            contactCount = cur.getCount();
+            cur.close();
+        }
+
+        // Requirement 22: Display count in a long toast
+        // Ensure you have "ste_contact_count" in your strings.xml to avoid hardcoding
+        String message = getString(R.string.ste_contact_count_prefix) + " " + contactCount;
+        Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+    }
+
+    // --- NEW CONTACTS STUFF END ---
 }
