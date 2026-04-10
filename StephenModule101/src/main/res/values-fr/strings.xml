@@ -26,6 +26,9 @@
     <string name="error_prefix">Erreur: %1$s</string>
     <string name="exception_prefix">Exception: %1$s</string>
     <string name="json_error_prefix">Erreur d\'analyse JSON: %1$s</string>
+    <string name="ste_menu_contacts_title">Contacts</string>
+    <string name="ste_contact_count_prefix">Nombre total de contacts dans la liste :</string>
+
 
     <string-array name="cities_array">
         <item>Toronto</item>
